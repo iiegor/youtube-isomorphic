@@ -64,7 +64,7 @@ export default class Home extends React.Component {
               <ul className={cx('yt-video-list-horizontal')}>
                 <li>
                   <Link to="/watch/_11d1ZsEZ8g" className={cx('video-link')}>
-                    <span className={cx('video-thumb')}><img src="//i.ytimg.com/vi_webp/_11d1ZsEZ8g/mqdefault.webp" width="196" height="110" /></span>
+                    <span className={cx('video-thumb')}><img src="//i.ytimg.com/vi/_11d1ZsEZ8g/mqdefault.jpg" width="196" height="110" /></span>
 
                     <div className={cx('video-info')}>
                       <h3>Git LFS 1.0</h3>
