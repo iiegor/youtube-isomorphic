@@ -1,0 +1,104 @@
+.header {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #DA2B28;
+  height: 60px;
+}
+
+.header .inner {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  .left { flex: 1 auto; }
+  .right { display: flex; text-align: right; }
+
+  .logo {
+    background-image: url(images/logo.png);
+    background-position: -19px;
+    height: 38px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: 138px;
+    vertical-align: middle;
+    display: inline-flex;
+  }
+
+  .divider {
+    border-left: 1px solid #C12622;
+    padding: 5px 0;
+    margin-left: 15px;
+    margin-right: 12px;
+  }
+
+  .search-input {
+    font-family: 'Roboto';
+    outline: 0;
+    border: 0;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 2px;
+    background-color: #BF2523;
+    height: 37px;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 16px;
+    min-width: 300pt;
+
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+
+    &::-webkit-search-cancel-button {
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
+
+  .btn-upload {
+    background-color: #BF2523;
+    height: 32px;
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 12px;
+    font-family: 'Roboto';
+    margin-right: 40px;
+
+    &:focus {
+      box-shadow: 0 1px 4px rgba(0,0,0,.37);
+    }
+  }
+
+  .username {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    .notifications {
+      cursor: pointer;
+      background: no-repeat url(images/notification.png);
+      height: 28px;
+      width: 20px;
+      background-size: 19px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.header .yt-loader {
+  position: fixed;
+  top: calc(60px - 2px);
+  color: rgba(255, 255, 255, 1);
+  background-color: currentcolor;
+  height: 2px;
+  opacity: 1;
+  left: 0;
+}

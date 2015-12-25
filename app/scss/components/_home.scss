@@ -1,0 +1,76 @@
+.home {
+  
+}
+
+.yt-header {
+  background-image: url(https://s.ytimg.com/yts/img/unlimited/ytu_landing_desktop_hero_1440x600-vflSsWPR1.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 400px;
+  min-width: 1003px;
+  position: relative;
+  text-align: center;
+}
+
+.yt-header .inner {
+  margin: 0 auto;
+  max-width: 552px;
+  padding-top: 70px;
+  text-align: center;
+
+  .promo-title {
+    margin: 0;
+
+    & > img {
+      height: 71px;
+    }
+  }
+
+  .promo-subtitle {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 25px 0 11px;
+
+    & > a.link {
+      color: #fbfbfb;
+      display: block;
+      font-size: 20px;
+      text-decoration: underline;
+    }
+
+    & > a.btn {
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 17px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 200px;
+      border-radius: 5px;
+      text-decoration: none;
+      background-color: #DA2B28;
+      font-weight: 400;
+      box-shadow: 0 1px 4px rgba(0,0,0,.37);
+      transition: background-color .2s,
+        box-shadow .2s;
+
+      &:hover {
+        background-color: rgb(193, 48, 46);
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2),0 6px 10px rgba(0,0,0,.3);
+      }
+
+      &:active {
+        box-shadow: 0 11px 7px rgba(0,0,0,.19),0 13px 25px rgba(0,0,0,.3)
+      }
+    }
+  }
+
+  .promo-info {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
