@@ -1,0 +1,171 @@
+/**
+ * Reset
+ */
+ 
+body {
+  font: 400 16px 'Roboto', sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #272C2F;
+  cursor: default;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Globals
+ */
+:global {
+
+  ._li { }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .container {
+    min-height: calc(100vh - 600px);
+    position: relative;
+    word-break: break-word;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 1200px;
+
+    .yt-content {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+
+  .yt-content {
+    & > section {
+      padding: 20px;
+
+      & > h2 {
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
+      &:not(:last-of-type)::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: 20px;
+        background-color: #FCF2F1;
+        height: 2px;
+        width: 100%;
+        border-left: 1px solid #C53E3B;
+        border-width: 50px;
+      }
+    }
+  }
+
+  .yt-video-list-horizontal {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 35px;
+
+      .video-link {
+        text-decoration: none;
+      }
+
+      .video-info {
+        display: block;
+        width: 192px;
+        color: #287BF1;
+
+        h3 {
+          margin: 0;
+          font-size: 15px;
+          font-weight: 500; // 600 maybe is very strong
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          display: block;
+          color: #A7A7A7;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .yt-sprite {
+    display: inline-block;
+
+    &.home-icon {
+      background: no-repeat url(../images/www-ui.png) -219px -49px;
+      background-size: auto;
+      width: 15px;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    &.trending-icon {
+      background: no-repeat url(../images/www-ui.png) -488px -350px;
+      background-size: auto;
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+    }
+
+    &.profile-icon {
+      background: no-repeat url(../images/www-ui.png) -491px -37px;
+      background-size: auto;
+      width: 15px;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    &.subscriptions-icon {
+      background: no-repeat url(../images/www-ui.png) -383px -18px;
+      background-size: auto;
+      width: 15px;
+      height: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  .yt-scrollbar {
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 9px
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #ccc
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #777
+    }
+  }
+
+}
