@@ -1,6 +1,6 @@
 # youtube-isomorphic
 
-A YouTube clone using react, webpack, flux on a node express server.
+A YouTube clone using react, webpack and flux on a node express server.
 
 ## Site
 
