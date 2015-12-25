@@ -18,7 +18,7 @@ export default class Home extends React.Component {
               Your membership for an amplified video and music experience.
 
               <a className={cx('btn')} href="//support.google.com/youtube/answer/6305537?hl=en&ref_topic=6305525" data-sessionlink="ei=XiV9VtTiMI2gcpeXgtgD">Start free trial</a>
-            
+
               <span className={cx('promo-info')}>$9.99/month 1-month free trial</span>
             </h2>
           </div>

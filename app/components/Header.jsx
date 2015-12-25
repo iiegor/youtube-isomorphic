@@ -11,7 +11,7 @@ export default class Home extends React.Component {
       <header className={cx('header')}>
         <div className={cx('inner')}>
           <div className={cx('left')}>
-            <Link to="/" className={cx('logo')}></Link>
+            <Link to="/" className={cx('logo')} />
 
             <span className={cx('divider')}></span>
 
