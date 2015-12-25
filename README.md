@@ -2,7 +2,7 @@
 
 A YouTube clone using react, webpack, flux on a node express server.
 
-## Site:
+## Site
 
 [https://youtube-isomorphic.herokuapp.com/](https://youtube-isomorphic.herokuapp.com/)
 
