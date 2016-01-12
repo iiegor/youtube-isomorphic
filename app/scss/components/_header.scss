@@ -96,7 +96,7 @@
 }
 
 .header .yt-loader {
-  position: fixed;
+  position: absolute;
   top: calc(60px - 2px);
   color: rgba(255, 255, 255, 1);
   background-color: currentcolor;
