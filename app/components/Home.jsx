@@ -10,7 +10,7 @@ const cx = classNames.bind(Styles);
 export default class Home extends React.Component {
   render() {
     return (
-      <div className={cx('home')}>
+      <div style={{flex: '1 auto'}} className={cx('home')}>
         <div className={cx('yt-header')}>
           <div className={cx('inner')}>
             <h1 className={cx('promo-title')}><img src="//s.ytimg.com/yts/img/unlimited/ytu_landing_desktop_logo_850x142-vflR4OIeR.png" alt="Logotipo de YouTube Red" /></h1>

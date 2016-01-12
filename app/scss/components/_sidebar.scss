@@ -1,6 +1,9 @@
 .sidebar {
-  position: absolute;
-  left: 0;
-  width: 205px;
-  height: 100%;
+  padding: 10px 20px;
+  color: #6B747B;
+  user-select: none;
+  
+  .title {
+    font-size: 16px;
+  }
 }

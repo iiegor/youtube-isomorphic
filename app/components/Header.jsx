@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
+import { connect } from 'react-redux';
+import { toggleSidebar } from 'actions/app';
+
 import classNames from 'classnames/bind';
 import Styles from 'scss/components/_header';
 
 const cx = classNames.bind(Styles);
 
-export default class Home extends React.Component {
+class Home extends Component {
   render() {
+    const { dispatch } = this.props;
+
     return (
       <header className={cx('header')}>
         <div className={cx('inner')}>
@@ -32,3 +37,9 @@ export default class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  dispatch: PropTypes.func.isRequired
+};
+
+export default connect()(Home)

@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import 'scss/main';
 
 import Header from './Header';
-// import Sidebar from './Sidebar';
+import Sidebar from './Sidebar';
 
 /*
  * This component operates as a "Controller-View". It listens for changes in the
@@ -26,7 +26,11 @@ export default class App extends Component {
         <Header />
 
         <div className="container">
+          <Sidebar />
+          
           {this.props.children}
+
+          <div className="yt-column"></div>
         </div>
       </div>
     );

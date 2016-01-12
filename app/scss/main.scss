@@ -43,13 +43,23 @@ ol, ul {
     display: none !important;
   }
 
+  .yt-column {
+    position: relative;
+    width: 216px;
+  }
+
   .container {
-    min-height: calc(100vh - 600px);
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*min-height: calc(100vh - 600px);
     position: relative;
     word-break: break-word;
-    margin: 0 auto;
     margin-top: 40px;
-    max-width: 1200px;
+    width: 100%;*/
 
     .yt-content {
       color: #000;
@@ -149,6 +159,14 @@ ol, ul {
       background-size: auto;
       width: 15px;
       height: 16px;
+      vertical-align: middle;
+    }
+
+    &.sidebar-icon {
+      background: no-repeat url(../images/www-ui.png) -197px -88px;
+      background-size: auto;
+      width: 13px;
+      height: 10px;
       vertical-align: middle;
     }
   }

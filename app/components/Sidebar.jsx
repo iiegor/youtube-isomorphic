@@ -1,21 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames/bind';
 import Styles from 'scss/components/_sidebar';
 
 const cx = classNames.bind(Styles);
 
-export default class Sidebar extends React.Component {
+class Sidebar extends Component {
   render() {
-    let classes = [];
-
-    if (this.props.hidden) {
-      classes.push('hidden');
-    }
-
     return (
-      <div className={cx('sidebar', classes.join(' '))}>
-        Sidebar!!
+      <div className={cx('yt-column', 'sidebar')}>
+        <h2 className={cx('title')}>Guide</h2>
       </div>
     );
   }
 }
+export default Sidebar;
