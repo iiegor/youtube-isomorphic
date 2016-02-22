@@ -8,4 +8,5 @@
 [https://youtube-isomorphic.herokuapp.com/](https://youtube-isomorphic.herokuapp.com/)
 
 ## Credits
-[react-webpack-node](https://github.com/choonkending/react-webpack-node), used as boilerplate.
+- [react-webpack-node](https://github.com/choonkending/react-webpack-node), used as boilerplate.
+- [youtube-homepage-redesign](https://dribbble.com/shots/2386471-Youtube-Homepage-Redesign), original concept.
